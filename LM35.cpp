@@ -14,8 +14,9 @@ LM35::~LM35(){ }
   // check temperature.
  double LM35::readCelsius() {
  	int sensorValue = analogRead(_pin);
- 	double temperature = (sensorValue * 0.48828125);
- 	return temperature;
+ 	 double temperature = (sensorValue * 0.913);
+
+ 	 	return temperature;
  }
 
  // check average temperature.
